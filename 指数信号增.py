@@ -35,12 +35,11 @@ if __name__ == "__main__":
     for i, x in enumerate(t):
         y[i] = calc_e(x)
         print('e^', x, ' = ', y[i], '(近似值)\t', math.exp(x), '(真实值)')
-   
+
     plt.figure(facecolor='w')
     mpl.rcParams['font.sans-serif'] = [u'SimHei']
     mpl.rcParams['axes.unicode_minus'] = False
     plt.plot(t, y, 'r-', t, y, 'go', linewidth=2)
-    plt.title(u'指数信号', fontsize=18)
     plt.xlabel('X', fontsize=15)
     plt.ylabel('exp(X)', fontsize=15)
     plt.grid(True)
