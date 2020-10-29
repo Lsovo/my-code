@@ -39,7 +39,7 @@ def hanshu3():
     import numpy as np
     import matplotlib.pyplot as plt
 
-    fig=plt.figure('冲击信号')
+    fig=plt.figure('冲激信号')
     y3=[1,0,0,0,0,0,0,0,0]
     plt.stem(y3)
     plt.grid(True)
